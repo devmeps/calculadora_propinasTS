@@ -15,7 +15,7 @@ function App() {
 
       <main className=" max-w-7xl mx-auto py-20 grid md:grid-cols-2">
         <div>
-        <h2>Menu de prueba </h2>
+        <h2>Menu</h2>
         </div>
         <div>
         <h2>Consumo</h2>
