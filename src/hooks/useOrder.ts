@@ -18,10 +18,18 @@ export default function useOrder() {
         }
     }
 
-    console.log(order)
+    const removeItem = (id: number) => {
+        const updateOrder = order.map(orderItem => orderItem.id === id ? 
+            { ...orderItem, quantity: orderItem.quantity - 1 } : 
+            orderItem
+        ).filter(orderItem => orderItem.quantity > 0)
+        setOrder(updateOrder)
+    }
+
 
     return {
         order,
         addItem,
+        removeItem
     }   
 }
