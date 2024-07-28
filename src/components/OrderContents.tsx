@@ -28,10 +28,9 @@ export default function OrderContents({ order, removeItem }: OrderContentsProps)
                       </p>
                       </div>
                       <button 
-                      className="bg-red-600 text-white px-3 py-1 rounded-full h-8 w-8 " onClick={() => 
-                      removeItem(item.id)}>
-                        x
-                        </button>
+                        className="bg-red-600 text-white px-3 py-1 rounded-full h-8 w-8 " onClick={removeItem}>
+                          x
+                      </button>
                 </div>
             ))
         }
